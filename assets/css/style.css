@@ -338,7 +338,7 @@ a.dfltWhiteBtn:hover{
   content: '';
   width: 200px;
   height: 170px;
-  background: url(../images/tiger-face-left.jpg) no-repeat 0 0;
+  background: url(../images/tiger-face-left.png) no-repeat 0 0;
   background-size: contain;
   top: 0;
   left: 0;
@@ -348,10 +348,10 @@ a.dfltWhiteBtn:hover{
   content: '';
   width: 200px;
   height: 170px;
-  background: url(../images/tiger-face-right.jpg) no-repeat 0 0;
+  background: url(../images/tiger-face-right.png) no-repeat 0 0;
   background-size: contain;
   top: 0;
-  right: 0;
+  right: -20px;
 }
 
 /*================ About Style Start ================*/
