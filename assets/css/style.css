@@ -116,7 +116,7 @@ img {
   height: auto;
 }
 
-h2{
+h2 {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 15px;
@@ -140,87 +140,101 @@ a.dfltBtn {
   display: inline-block;
   border-radius: 40px;
   padding: 16px 50px;
-  background: rgb(3,47,229);
-  background: linear-gradient(90deg, rgba(3,47,229,1) 0%, rgba(3,47,229,0.75) 100%);
+  background: rgb(3, 47, 229);
+  background: linear-gradient(90deg, rgba(3, 47, 229, 1) 0%, rgba(3, 47, 229, 0.75) 100%);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 a.dfltBtn:hover {
-  background: rgb(3,47,229);
-  background: linear-gradient(90deg, rgba(3,47,229,0.65) 0%, rgba(3,47,229,1) 100%);
+  background: rgb(3, 47, 229);
+  background: linear-gradient(90deg, rgba(3, 47, 229, 0.65) 0%, rgba(3, 47, 229, 1) 100%);
 }
-a.dfltWhiteBtn{
+
+a.dfltWhiteBtn {
   background: var(--white);
   color: #0052ff;
 }
-a.dfltWhiteBtn:hover{
+
+a.dfltWhiteBtn:hover {
   background: var(--black);
   color: var(--white);
 }
-.lightGrayBg{
+
+.lightGrayBg {
   background-color: var(--lightGrayBg);
 }
-.lightSkyBg{
+
+.lightSkyBg {
   background-color: var(--lightSkyBg);
 }
 
 
 /*================ Header Style Start ================*/
-.mainHdrSec{
+.mainHdrSec {
   position: relative;
   padding: 15px 0;
 }
-.hdrRow{
+
+.hdrRow {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.hdrLeftPrt img{
+
+.hdrLeftPrt img {
   max-width: 160px;
 }
-.hdrRightPrt{
+
+.hdrRightPrt {
   text-align: right;
 }
-.hdrRightPrt P{
+
+.hdrRightPrt P {
   font-family: "Courgette", cursive;
   font-size: 30px;
   color: var(--white);
   display: inline-block;
-  background: rgb(3,47,229);
-  background: linear-gradient(90deg, rgba(3,47,229,1) 0%, rgba(3,47,229,0.75) 100%);
+  background: rgb(3, 47, 229);
+  background: linear-gradient(90deg, rgba(2, 90, 200, 1) 0%, rgba(3, 100, 200, 0.75) 100%);
   padding: 14px 35px;
   border-radius: 100px;
 }
-.hdrRightPrt P a{
+
+.hdrRightPrt P a {
   color: var(--white);
   text-decoration: underline;
   margin: 0 0 0 10px;
 }
-.hdrRightPrt P img{
+
+.hdrRightPrt P img {
   max-width: 35px;
   vertical-align: middle;
 }
+
 /*================ Header Style End ================*/
 
 
 /*================ Footer Style Start ================*/
-.btmMainFtr{
+.btmMainFtr {
   position: relative;
   padding: 25px 0 10px 0;
   text-align: center;
 }
-.btmMainFtr h2{
+
+.btmMainFtr h2 {
   font-size: 60px;
-  color: var(--secondary);
+  color: #000;
   font-style: italic;
 }
-.btmMainFtr h3{
+
+.btmMainFtr h3 {
   font-size: 25px;
-  color: var(--secondary);
+  color: #000;
   font-style: italic;
   display: inline-block;
   background-color: var(--white);
@@ -229,12 +243,30 @@ a.dfltWhiteBtn:hover{
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   margin: 10px 0 30px 0;
 }
-.ftrMnuOne ul{
+
+.ftrMnuOne ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.ftrMnuOne ul li{
+
+.ftrMnuOne ul li {
+  font-family: var(--hdnFont);
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 40px;
+}
+
+.ftrMnuTwo ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+}
+
+.ftrMnuTwo ul li {
   font-family: var(--hdnFont);
   font-size: 30px;
   color: var(--secondary);
@@ -243,72 +275,67 @@ a.dfltWhiteBtn:hover{
   margin: 10px 40px;
 }
 
-.ftrMnuTwo ul{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px 0 20px 0;
-}
-.ftrMnuTwo ul li{
-  font-family: var(--hdnFont);
-  font-size: 30px;
-  color: var(--secondary);
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 10px 40px;
-}
-.ftrMnuTwo ul li a{
-  color: var(--secondary);
+.ftrMnuTwo ul li a {
+  color: #000;
   text-decoration: underline;
 }
-.ftrMnuTwo ul li a:hover{
+
+.ftrMnuTwo ul li a:hover {
   color: var(--black);
   text-decoration: underline;
 }
-.ftrMnuTwo ul li img{
+
+.ftrMnuTwo ul li img {
   max-width: 50px;
   margin-right: 10px;
 }
-.ftrMnuTwo ul li:nth-child(2){
+
+.ftrMnuTwo ul li:nth-child(2) {
   background-color: var(--white);
   padding: 12px 20px;
   border-radius: 6px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.15); */
   font-weight: normal;
   font-size: 25px;
 }
-.ftrMnuTwo ul li:nth-child(2) strong{
+
+.ftrMnuTwo ul li:nth-child(2) strong {
   font-size: 30px;
 }
-.ftrCopyrightPrt{
+
+.ftrCopyrightPrt {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.ftrCopyrightPrt p{
+
+.ftrCopyrightPrt p {
   font-family: var(--hdnFont);
   font-size: 14px;
-  color: var(--secondary);
+  color: var(--black);
   font-weight: 700;
   margin: 0;
 }
-.ftrCopyrightPrt p.blackText{
+
+.ftrCopyrightPrt p.blackText {
   font-size: 13px;
   color: var(--black);
   font-weight: normal;
 }
+
 /*================ Footer Style End ================*/
 
 
 
 
 /*================ Banner Style Start ================*/
-.hmBnrSec{
+.hmBnrSec {
   position: relative;
   padding: 20px 0 10px 0;
   text-align: center;
 }
-.hmBnrSec h1{
+
+.hmBnrSec h1 {
   font-size: 55px;
   color: var(--black);
   font-weight: bold;
@@ -317,7 +344,8 @@ a.dfltWhiteBtn:hover{
   padding-top: 10px;
   margin-bottom: 30px;
 }
-.hmBnrSec h2{
+
+.hmBnrSec h2 {
   font-size: 50px;
   color: var(--black);
   font-weight: bold;
@@ -325,15 +353,18 @@ a.dfltWhiteBtn:hover{
   font-style: italic;
   padding-top: 30px;
 }
-.hmBnrSec p{
+
+.hmBnrSec p {
   max-width: 550px;
   margin: 0 auto;
 }
-.hmBnrSec .hmBnrContent{
+
+.hmBnrSec .hmBnrContent {
   position: relative;
   padding: 0 150px;
 }
-.hmBnrSec .hmBnrContent::before{
+
+.hmBnrSec .hmBnrContent::before {
   position: absolute;
   content: '';
   width: 200px;
@@ -343,7 +374,8 @@ a.dfltWhiteBtn:hover{
   top: 0;
   left: 0;
 }
-.hmBnrSec .hmBnrContent::after{
+
+.hmBnrSec .hmBnrContent::after {
   position: absolute;
   content: '';
   width: 200px;
@@ -355,12 +387,13 @@ a.dfltWhiteBtn:hover{
 }
 
 /*================ About Style Start ================*/
-.aboutSec{
+.aboutSec {
   position: relative;
   padding: 10px 0;
   text-align: center;
 }
-.aboutSec::after{
+
+.aboutSec::after {
   position: absolute;
   content: '';
   width: 225px;
@@ -370,10 +403,12 @@ a.dfltWhiteBtn:hover{
   bottom: 0;
   right: 0;
 }
-.aboutSec .container{
+
+.aboutSec .container {
   position: relative;
 }
-.aboutImg{
+
+.aboutImg {
   position: absolute;
   max-width: 650px;
   top: 145px;
@@ -381,10 +416,12 @@ a.dfltWhiteBtn:hover{
   right: 0;
   margin: 0 auto;
 }
-.aboutImg img{
+
+.aboutImg img {
   max-height: 600px;
 }
-.aboutImg::before{
+
+.aboutImg::before {
   position: absolute;
   content: '';
   width: 130px;
@@ -395,7 +432,8 @@ a.dfltWhiteBtn:hover{
   background-size: contain;
   transform: rotate(200deg);
 }
-.aboutImg::after{
+
+.aboutImg::after {
   position: absolute;
   content: '';
   width: 130px;
@@ -406,88 +444,102 @@ a.dfltWhiteBtn:hover{
   background-size: contain;
   transform: rotate(150deg);
 }
-.aboutBstTxt{
+
+.aboutBstTxt {
   position: absolute;
   width: 100%;
   top: 530px;
   left: 0;
   text-align: center;
 }
-.aboutBstTxt h2{
+
+.aboutBstTxt h2 {
   font-size: 35px;
-  color: var(--secondary);
+  color: rgba(3, 90, 200, 0.75);
   font-weight: 400;
   font-style: italic;
   text-transform: uppercase;
   padding-right: 15px;
 }
-.aboutTextPrt{
+
+.aboutTextPrt {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
 }
-.aboutTextPrt h2{
+
+.aboutTextPrt h2 {
   font-size: 65px;
   font-weight: 400;
   font-style: italic;
   padding-top: 25px;
 }
-.aboutTextPrt h2 span{
-  color: var(--secondary);
+
+.aboutTextPrt h2 span {
+  color: rgba(3, 47, 229, 0.75);
 }
 
 /*================ Services Style Start ================*/
-.servicesSec{
+.servicesSec {
   position: relative;
   padding: 40px 0;
 }
-.servicesRow{
+
+.servicesRow {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.servicesClm{
+
+.servicesClm {
   width: 28%;
   text-align: center;
-  background: rgb(3,47,229);
-  background: linear-gradient(90deg, rgba(3,47,229,1) 0%, rgba(3,47,229,0.75) 100%);
+  background: rgb(3, 47, 229);
+  background: linear-gradient(90deg, rgba(2, 90, 200, 1) 0%, rgba(3, 100, 200, 0.75) 100%);
   padding: 30px 0;
   border-radius: 40px;
 }
-.servicesClm h3{
+
+.servicesClm h3 {
   font-size: 32px;
-  color: var(--secondary);
+  color: #fff;
   padding: 0 15px;
 }
-.servicesClm p{
+
+.servicesClm p {
   font-size: 18px;
   color: var(--white);
   line-height: 28px;
   word-break: break-all;
 }
-.servicesClm p span{
+
+.servicesClm p span {
   color: var(--secondary);
 }
-.servicesClm img{
+
+.servicesClm img {
   max-width: 80px;
 }
-.servicesClm .srvcClmText{
+
+.servicesClm .srvcClmText {
   padding: 0 25px;
 }
-.servicesClm .srvcClmImg{
-  background: rgb(231,231,231);
-  background: linear-gradient(90deg, rgba(209,209,209,1) 0%, rgba(242,242,242,1) 100%);
+
+.servicesClm .srvcClmImg {
+  background: rgb(231, 231, 231);
+  background: linear-gradient(90deg, rgba(209, 209, 209, 1) 0%, rgba(242, 242, 242, 1) 100%);
   width: 100%;
   padding: 15px 10px;
   margin: 20px 0;
 }
 
 /*================ Disclamer Style Start ================*/
-.disclamerSec{
+.disclamerSec {
   position: relative;
   padding: 25px 0;
 }
-.disclamerSec::before{
+
+.disclamerSec::before {
   position: absolute;
   content: '';
   width: 190px;
@@ -497,7 +549,8 @@ a.dfltWhiteBtn:hover{
   background: url(../images/disclamer-before.png) no-repeat 0 0;
   background-size: contain;
 }
-.disclamerSec::after{
+
+.disclamerSec::after {
   position: absolute;
   content: '';
   width: 190px;
@@ -507,46 +560,53 @@ a.dfltWhiteBtn:hover{
   background: url(../images/disclamer-after.png) no-repeat 0 0;
   background-size: contain;
 }
-.disclamerRow{
+
+.disclamerRow {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 950px;
   margin: 0 auto;
 }
-.disclamerItm{
+
+.disclamerItm {
   width: 43%;
-  background: rgb(3,47,229);
-  background: linear-gradient(90deg, rgba(3,47,229,1) 0%, rgba(3,47,229,0.75) 100%);
+  background: rgb(3, 47, 229);
+  background: linear-gradient(90deg, rgba(2, 90, 200, 1) 0%, rgba(3, 100, 200, 0.75) 100%);
   padding: 30px 20px;
   border-radius: 40px;
 }
-.disclamerItm h3{
+
+.disclamerItm h3 {
   font-size: 32px;
-  color: var(--secondary);
+  color: #fff;
   font-style: italic;
   padding-bottom: 15px;
 }
-.disclamerItm p{
+
+.disclamerItm p {
   font-size: 18px;
   color: var(--white);
   line-height: 30px;
   word-break: break-all;
 }
-.disclamerVerticalItm{
+
+.disclamerVerticalItm {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.disclamerVerticalItm h2{
+
+.disclamerVerticalItm h2 {
   position: relative;
   font-size: 35px;
-  color: var(--secondary);
+  color: #000;
   line-height: 55px;
   font-style: italic;
 }
-.disclamerVerticalItm h2::before{
+
+.disclamerVerticalItm h2::before {
   position: absolute;
   content: '';
   width: 100px;
@@ -556,7 +616,8 @@ a.dfltWhiteBtn:hover{
   background: url(../images/mr-beast-logo-black.png) no-repeat 0 0;
   background-size: contain;
 }
-.disclamerVerticalItm h2::after{
+
+.disclamerVerticalItm h2::after {
   position: absolute;
   content: '';
   width: 100px;
@@ -571,74 +632,86 @@ a.dfltWhiteBtn:hover{
 
 
 /*=============== Responsive Style ===============*/
-@media (max-width: 1400px) {
-  
-}
+@media (max-width: 1400px) {}
 
 
 @media (max-width: 1300px) {
-  .ftrCopyrightPrt{
+  .ftrCopyrightPrt {
     text-align: center;
   }
-  .ftrCopyrightPrt p{
+
+  .ftrCopyrightPrt p {
     width: 100%;
   }
 }
 
 
 @media (max-width: 1199px) {
-  .hdrLeftPrt img{
+  .hdrLeftPrt img {
     max-width: 100px;
   }
-  .hdrRightPrt P{
+
+  .hdrRightPrt P {
     font-size: 20px;
     padding: 10px 25px;
   }
-  .hdrRightPrt P img{
+
+  .hdrRightPrt P img {
     max-width: 25px;
   }
+
   .hmBnrSec .hmBnrContent::before,
-  .hmBnrSec .hmBnrContent::after{
+  .hmBnrSec .hmBnrContent::after {
     width: 180px;
     height: 150px;
   }
+
   .hmBnrSec h1,
-  .hmBnrSec h2{
+  .hmBnrSec h2 {
     font-size: 40px;
   }
-  .aboutTextPrt{
+
+  .aboutTextPrt {
     max-width: 700px;
   }
-  .aboutTextPrt h2{
+
+  .aboutTextPrt h2 {
     font-size: 35px;
   }
-  .aboutSec::after{
+
+  .aboutSec::after {
     width: 150px;
     height: 200px;
   }
-  .servicesClm{
+
+  .servicesClm {
     width: 32%;
   }
-  .servicesClm h3{
+
+  .servicesClm h3 {
     font-size: 25px;
   }
+
   .disclamerSec::before,
-  .disclamerSec::after{
+  .disclamerSec::after {
     display: none;
   }
-  .btmMainFtr h2{
+
+  .btmMainFtr h2 {
     font-size: 45px;
   }
-  .btmMainFtr h3{
+
+  .btmMainFtr h3 {
     font-size: 20px;
   }
+
   .ftrMnuOne ul li,
-  .ftrMnuTwo ul li{
+  .ftrMnuTwo ul li {
     font-size: 25px;
   }
 
 
-  p{
+  p {
     font-size: 18px;
     line-height: 32px;
   }
@@ -646,84 +719,102 @@ a.dfltWhiteBtn:hover{
 
 
 @media (max-width: 991px) {
-  .hmBnrSec .hmBnrContent{
+  .hmBnrSec .hmBnrContent {
     padding: 0 130px;
   }
+
   .hmBnrSec .hmBnrContent::before,
-  .hmBnrSec .hmBnrContent::after{
+  .hmBnrSec .hmBnrContent::after {
     width: 130px;
     height: 110px;
   }
+
   .hmBnrSec h1,
-  .hmBnrSec h2{
+  .hmBnrSec h2 {
     font-size: 32px;
   }
-  .aboutImg{
+
+  .aboutImg {
     max-width: 500px;
     top: 85px;
   }
-  .aboutImg::before{
+
+  .aboutImg::before {
     width: 80px;
     height: 140px;
     bottom: 60px;
     left: 130px;
   }
-  .aboutImg::after{
+
+  .aboutImg::after {
     width: 80px;
     height: 165px;
     bottom: 45px;
     right: 150px;
   }
-  .aboutBstTxt{
+
+  .aboutBstTxt {
     top: 360px;
   }
-  .aboutBstTxt h2{
+
+  .aboutBstTxt h2 {
     font-size: 25px;
   }
-  .aboutTextPrt h2{
+
+  .aboutTextPrt h2 {
     font-size: 30px;
   }
-  .aboutSec::after{
+
+  .aboutSec::after {
     display: none;
   }
-  .servicesClm{
+
+  .servicesClm {
     width: 100%;
     max-width: 500px;
     margin: 10px auto;
   }
-  .disclamerItm{
+
+  .disclamerItm {
     width: 100%;
     max-width: 500px;
     margin: 10px auto;
     text-align: center;
   }
-  .disclamerVerticalItm{
+
+  .disclamerVerticalItm {
     width: 100%;
     flex-direction: row;
     margin: 20px 0;
   }
-  .disclamerVerticalItm h2{
+
+  .disclamerVerticalItm h2 {
     letter-spacing: 15px;
   }
-  .disclamerVerticalItm h2 br{
+
+  .disclamerVerticalItm h2 br {
     display: none;
   }
+
   .disclamerVerticalItm h2::before,
-  .disclamerVerticalItm h2::after{
+  .disclamerVerticalItm h2::after {
     width: 70px;
     height: 70px;
   }
-  .disclamerVerticalItm h2::before{
+
+  .disclamerVerticalItm h2::before {
     top: 0;
     left: -85px;
   }
-  .disclamerVerticalItm h2::after{
+
+  .disclamerVerticalItm h2::after {
     bottom: -15px;
     right: -70px;
     left: inherit;
   }
+
   .ftrMnuOne ul li,
-  .ftrMnuTwo ul li{
+  .ftrMnuTwo ul li {
     font-size: 20px;
     margin: 10px 30px;
   }
@@ -731,46 +822,56 @@ a.dfltWhiteBtn:hover{
 
 
 @media (max-width: 767px) {
+
   .hmBnrSec .hmBnrContent::before,
-  .hmBnrSec .hmBnrContent::after{
+  .hmBnrSec .hmBnrContent::after {
     width: 110px;
     height: 100px;
   }
+
   .hmBnrSec h1,
-  .hmBnrSec h2{
+  .hmBnrSec h2 {
     font-size: 20px;
   }
-  .aboutImg{
+
+  .aboutImg {
     top: 35px;
   }
-  .aboutBstTxt{
+
+  .aboutBstTxt {
     position: relative;
     top: 0;
   }
+
   .servicesClm p,
-  .disclamerItm p{
+  .disclamerItm p {
     font-size: 16px;
   }
-  .btmMainFtr h3{
+
+  .btmMainFtr h3 {
     font-size: 17px;
     word-break: break-all;
   }
+
   .ftrMnuOne ul li,
-  .ftrMnuTwo ul li{
+  .ftrMnuTwo ul li {
     font-size: 18px;
     margin: 10px 20px;
   }
-  .ftrMnuTwo ul li:nth-child(2){
+
+  .ftrMnuTwo ul li:nth-child(2) {
     font-size: 18px;
   }
-  .ftrMnuTwo ul li:nth-child(2) strong{
+
+  .ftrMnuTwo ul li:nth-child(2) strong {
     font-size: 22px;
   }
-  .ftrMnuTwo ul li img{
+
+  .ftrMnuTwo ul li img {
     max-width: 40px;
   }
 
-  p{
+  p {
     font-size: 16px;
     line-height: 30px;
   }
@@ -778,52 +879,63 @@ a.dfltWhiteBtn:hover{
 
 
 @media (max-width: 576px) {
-  .hmBnrSec .hmBnrContent{
+  .hmBnrSec .hmBnrContent {
     padding: 0 65px;
   }
+
   .hmBnrSec .hmBnrContent::before,
-  .hmBnrSec .hmBnrContent::after{
+  .hmBnrSec .hmBnrContent::after {
     width: 60px;
     height: 50px;
   }
-  .hmBnrSec h1{
+
+  .hmBnrSec h1 {
     margin-bottom: 10px;
   }
-  .hmBnrSec h2{
+
+  .hmBnrSec h2 {
     padding-top: 15px;
   }
-  .aboutImg::before{
+
+  .aboutImg::before {
     width: 50px;
     height: 80px;
     left: 105px;
   }
-  .aboutImg::after{
+
+  .aboutImg::after {
     width: 50px;
     height: 80px;
     bottom: 45px;
     right: 115px;
   }
-  .aboutBstTxt{
+
+  .aboutBstTxt {
     top: 30px;
   }
-  .aboutBstTxt h2{
+
+  .aboutBstTxt h2 {
     font-size: 20px;
   }
-  .aboutTextPrt{
+
+  .aboutTextPrt {
     padding-top: 25px;
   }
-  .aboutTextPrt h2{
+
+  .aboutTextPrt h2 {
     font-size: 25px;
   }
-  .disclamerItm h3{
+
+  .disclamerItm h3 {
     font-size: 28px;
   }
-  .disclamerVerticalItm h2{
+
+  .disclamerVerticalItm h2 {
     font-size: 30px;
     letter-spacing: 12px;
   }
 
-  a.dfltBtn{
+  a.dfltBtn {
     font-size: 20px;
     padding: 12px 30px;
   }
