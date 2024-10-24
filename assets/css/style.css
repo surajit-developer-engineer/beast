@@ -199,8 +199,8 @@ a.dfltWhiteBtn:hover {
   font-size: 30px;
   color: var(--white);
   display: inline-block;
-  background: rgb(3, 47, 229);
-  background: linear-gradient(90deg, rgba(2, 90, 200, 1) 0%, rgba(3, 100, 200, 0.75) 100%);
+  background: #000;
+  /* background: linear-gradient(90deg, rgba(2, 90, 200, 1) 0%, rgba(3, 100, 200, 0.75) 100%); */
   padding: 14px 35px;
   border-radius: 100px;
 }
@@ -378,7 +378,7 @@ a.dfltWhiteBtn:hover {
 }
 
 .hmBnrSec p {
-  max-width: 550px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
