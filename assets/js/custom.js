@@ -50,3 +50,30 @@ $(document).ready(function () {
 	});
 
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Récupère tous les éléments avec la classe 'icon-embed-small'
+  var icons = document.querySelectorAll('.icon-embed-small');
+
+  // Ajoute un écouteur d'événement de clic à chaque icône
+  icons.forEach(function (icon) {
+	icon.addEventListener('click', function () {
+	  // Récupère l'élément parent qui contient la description
+	  var headerWrapper = icon.closest('.faq_component-header-wrapper');
+	  var descriptionWrapper = headerWrapper.nextElementSibling;
+
+	  // Change la hauteur de la description pour la dérouler ou l'enrouler
+	  if (descriptionWrapper.style.height === '0px' || !descriptionWrapper.style
+		.height) {
+		descriptionWrapper.style.height = descriptionWrapper.scrollHeight + 'px';
+		descriptionWrapper.classList.add('open');
+	  } else {
+		descriptionWrapper.style.height = '0px';
+		descriptionWrapper.classList.remove('open');
+	  }
+	});
+  });
+});
