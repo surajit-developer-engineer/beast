@@ -415,7 +415,7 @@ a.dfltWhiteBtn:hover {
   background: url(../images/tiger-face-right.png) no-repeat 0 0;
   background-size: contain;
   top: 0;
-  right: -20px;
+  right: 0;
 }
 
 
