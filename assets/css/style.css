@@ -176,7 +176,7 @@ a.dfltWhiteBtn:hover {
 /*================ Header Style Start ================*/
 .mainHdrSec {
   position: relative;
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 .hdrRow {
@@ -187,7 +187,7 @@ a.dfltWhiteBtn:hover {
 }
 
 .hdrLeftPrt img {
-  max-width: 160px;
+  max-width: 120px;
 }
 
 .hdrRightPrt {
@@ -203,6 +203,7 @@ a.dfltWhiteBtn:hover {
   /* background: linear-gradient(90deg, rgba(2, 90, 200, 1) 0%, rgba(3, 100, 200, 0.75) 100%); */
   padding: 14px 35px;
   border-radius: 100px;
+  margin-bottom: 0;
 }
 
 .hdrRightPrt P a {
@@ -361,6 +362,17 @@ a.dfltWhiteBtn:hover {
 
 
 /*================ Banner Style Start ================*/
+.bannerSec {
+  position: relative;
+  margin: 0 0 50px;
+ /* padding: 20px 0 10px 0;
+  text-align: center;
+  background: url(../images/banner-img.png) 0 0 no-repeat;
+  background-size: 100%; */
+}
+.bannerSec img{
+  width: 100%;
+}
 .hmBnrSec {
   position: relative;
   padding: 20px 0 10px 0;
@@ -994,7 +1006,7 @@ a.dfltWhiteBtn:hover {
 
 @media (max-width: 1199px) {
   .hdrLeftPrt img {
-    max-width: 100px;
+    max-width: 80px;
   }
 
   .hdrRightPrt P {
@@ -1269,8 +1281,13 @@ a.dfltWhiteBtn:hover {
 
 @media (max-width: 576px) {
   .hmBnrSec .hmBnrContent {
-    padding: 0 65px;
+    padding: 0 20px;
   }
+  .hmBnrSec {
+    position: relative;
+    padding: 0px 0 10px 0;
+    text-align: center;
+}
 
   .hmBnrSec .hmBnrContent::before,
   .hmBnrSec .hmBnrContent::after {
