@@ -49,10 +49,10 @@
   </header>
   <!-- ================ Header Section End ================ -->
 
-<!-- ================ Banner Section Start ================ -->
-<section class="bannerSec">
-  <img src="assets/images/banner-img.jpeg" alt="Banner" />  
-</section>
+  <!-- ================ Banner Section Start ================ -->
+  <section class="bannerSec">
+    <img src="assets/images/banner-img.jpeg" alt="Banner" />
+  </section>
 
 
 
@@ -153,14 +153,14 @@
           <!-- START:: Holders -->
           <div class="bgsecRow">
             <h3>Holders</h3>
-            <p>347,536+</p>
+            <p><span id="holders"></span>+</p>
             <p class="bgsecRowSmallText"></p>
           </div>
           <!-- END:: Holders -->
           <!-- START:: Price -->
           <div class="bgsecRow">
             <h3>Price</h3>
-            <p>$0.07</p>
+            <p>$<span id="exchangeRate"></span></p>
             <p class="bgsecRowSmallText">
               <!-- 0.061759 WETH -->
             </p>
@@ -170,7 +170,7 @@
           <!-- START:: Market Cap -->
           <div class="bgsecRow">
             <h3>Market Cap</h3>
-            <p>$700,000</p>
+            <p>$<span id="circulatingMarketCap"></span></p>
             <p class="bgsecRowSmallText"></p>
           </div>
           <!-- END:: Market Cap -->
@@ -448,6 +448,31 @@
   <script src="assets/js/owl.carousel.min.js"></script>
   <!-- Custome js -->
   <script src="assets/js/custom.js"></script>
+
+  <script>
+    const options = {
+      method: 'GET',
+      headers: { accept: 'application/json' }
+    };
+
+    fetch('https://base.blockscout.com/api/v2/addresses/0x82aed68f1dEAcA2b2AA4C5f27276374228A9F923', options)
+      .then(res => res.json())
+      .then(data => {
+        const formatter = new Intl.NumberFormat('en-US'); // Formatter for commas
+
+        // Format and display each value as specified
+        // const totalSupply = formatter.format(data.token?.total_supply || 0); // Add commas
+        const holders = formatter.format(data.token?.holders || 0); // Add commas
+        const exchangeRate = parseFloat(data.token?.exchange_rate || 0).toFixed(4); // Round to 4 decimals
+        const circulatingMarketCap = formatter.format(Math.round(data.token?.circulating_market_cap || 0)); // Round and add commas
+
+        // document.getElementById('totalSupply').textContent = totalSupply;
+        document.getElementById('holders').textContent = holders;
+        document.getElementById('exchangeRate').textContent = exchangeRate;
+        document.getElementById('circulatingMarketCap').textContent = circulatingMarketCap;
+      })
+      .catch(err => console.error('Error:', err));
+  </script>
 </body>
 
 </html>
